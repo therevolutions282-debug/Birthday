@@ -18,14 +18,14 @@
       margin: 20px 0;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
-    button {
-      padding: 10px 22px;
-      border: none;
-      border-radius: 12px;
+    a.button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 14px;
       background: #d6336c;
       color: white;
+      text-decoration: none;
       font-size: 16px;
-      cursor: pointer;
       margin: 15px 0;
     }
   </style>
@@ -34,13 +34,8 @@
 
   <h1>Selamat Ulang Tahun, Sayang 🤍</h1>
 
-  <!-- TOMBOL MUSIK -->
-  <button onclick="playMusic()">▶️ Putar Lagu Cinta Terakhir</button>
-
   <!-- FOTO -->
-  <div>
-    <img src="foto.jpg" alt="Foto Kita">
-  </div>
+  <img src="foto.jpg" alt="Foto Kita">
 
   <p>
     Di hari spesial ini, aku cuma mau bilang  
@@ -54,21 +49,14 @@
     dan memudahkan langkah kita menuju hari halal 🤍
   </p>
 
+  <!-- TOMBOL LAGU -->
+  <a class="button"
+     href="https://www.youtube.com/watch?v=0G2xZzZf0nQ"
+     target="_blank">
+     🎶 Putar Lagu Kita
+  </a>
+
   <p><b>— Dari calon pasangan hidupmu 🥰</b></p>
-
-  <!-- YOUTUBE (HIDDEN) -->
-  <iframe id="yt"
-    width="0"
-    height="0"
-    allow="autoplay">
-  </iframe>
-
-  <script>
-    function playMusic() {
-      document.getElementById("yt").src =
-        "https://www.youtube.com/embed/0G2xZzZf0nQ?autoplay=1&loop=1&playlist=0G2xZzZf0nQ";
-    }
-  </script>
 
 </body>
 </html>
