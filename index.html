@@ -18,15 +18,15 @@
       margin: 20px 0;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
-    a.button {
-      display: inline-block;
+    button {
       padding: 12px 22px;
       border-radius: 14px;
+      border: none;
       background: #d6336c;
       color: white;
-      text-decoration: none;
       font-size: 16px;
       margin: 15px 0;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -34,7 +34,6 @@
 
   <h1>Selamat Ulang Tahun, Sayang 🤍</h1>
 
-  <!-- FOTO -->
   <img src="foto.jpg" alt="Foto Kita">
 
   <p>
@@ -49,14 +48,17 @@
     dan memudahkan langkah kita menuju hari halal 🤍
   </p>
 
-  <!-- TOMBOL LAGU -->
-  <a class="button"
-     href="https://www.youtube.com/watch?v=0G2xZzZf0nQ"
-     target="_blank">
-     🎶 Putar Lagu Kita
-  </a>
+  <!-- TOMBOL LAGU (ANTI BLOK) -->
+  <button onclick="openSong()">🎶 Putar Lagu Kita</button>
 
   <p><b>— Dari calon pasangan hidupmu 🥰</b></p>
+
+  <script>
+    function openSong() {
+      window.location.href =
+        "https://www.youtube.com/watch?v=0G2xZzZf0nQ";
+    }
+  </script>
 
 </body>
 </html>
