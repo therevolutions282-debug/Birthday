@@ -2,23 +2,65 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Untuk Reva 🤍</title>
+  <title>Untuk Sayang 🤍</title>
 
   <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
   <style>
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      background: linear-gradient(#fff0f5, #ffffff);
       font-family: 'Poppins', sans-serif;
       color: #333;
       scroll-behavior: smooth;
+      background: linear-gradient(270deg, #fff0f5, #fde2e4, #fff);
+      background-size: 600% 600%;
+      animation: gradientMove 18s ease infinite;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* LOVE FLOAT */
+    .hearts {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .heart {
+      position: absolute;
+      color: rgba(201, 24, 74, 0.25);
+      font-size: 18px;
+      animation: floatUp linear infinite;
+    }
+
+    @keyframes floatUp {
+      from {
+        transform: translateY(100vh) scale(1);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(-10vh) scale(1.2);
+        opacity: 1;
+      }
     }
 
     section {
+      position: relative;
+      z-index: 1;
       min-height: 100vh;
-      padding: 60px 25px;
+      padding: 70px 25px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -32,7 +74,7 @@
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 38px;
       margin-bottom: 10px;
     }
 
@@ -43,16 +85,16 @@
 
     p {
       font-size: 17px;
-      line-height: 1.8;
+      line-height: 1.9;
       max-width: 650px;
-      margin-bottom: 15px;
+      margin-bottom: 16px;
     }
 
     img {
       width: 260px;
-      border-radius: 24px;
+      border-radius: 26px;
       margin: 25px 0;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.18);
     }
 
     .scroll {
@@ -64,69 +106,78 @@
 </head>
 <body>
 
-  <!-- HALAMAN 1 -->
-  <section id="page1">
+  <!-- LOVE BACKGROUND -->
+  <div class="hearts">
+    <div class="heart" style="left:10%; animation-duration:18s;">🤍</div>
+    <div class="heart" style="left:30%; animation-duration:22s;">🤍</div>
+    <div class="heart" style="left:50%; animation-duration:20s;">🤍</div>
+    <div class="heart" style="left:70%; animation-duration:24s;">🤍</div>
+    <div class="heart" style="left:90%; animation-duration:19s;">🤍</div>
+  </div>
+
+  <!-- PAGE 1 -->
+  <section>
     <h1>Selamat Ulang Tahun</h1>
-    <h2>Reva 🤍</h2>
+    <h2>Sayang 🤍</h2>
 
     <p>
-      Hari ini bukan sekadar tentang bertambahnya usia,  
-      tapi tentang bagaimana kamu telah tumbuh menjadi pribadi  
-      yang begitu hangat, kuat, dan berarti.
+      Hari ini bukan hanya tentang bertambahnya usia,  
+      tapi tentang bagaimana kamu tumbuh menjadi pribadi  
+      yang hangat, kuat, dan begitu berarti.
     </p>
 
     <p>
-      Di usia ke-22 ini, semoga hidupmu semakin dipenuhi  
-      dengan ketenangan, kebahagiaan, dan cinta  
-      yang tidak pernah kamu ragukan.
+      Di usia ke-22 ini, semoga hidupmu  
+      selalu dipeluk oleh ketenangan  
+      dan dikelilingi oleh cinta yang tulus.
     </p>
 
     <div class="scroll">scroll ke bawah ↓</div>
   </section>
 
-  <!-- HALAMAN 2 -->
-  <section id="page2">
-    <img src="foto.jpg" alt="Reva">
+  <!-- PAGE 2 -->
+  <section>
+    <img src="foto.jpg" alt="Foto Kita">
 
     <p>
-      Reva, terima kasih karena sudah menjadi dirimu sendiri.  
-      Terima kasih karena selalu berusaha,  
-      bahkan di hari-hari yang tidak mudah.
+      Sayang, terima kasih karena sudah bertahan sejauh ini.  
+      Terima kasih karena tetap menjadi dirimu sendiri,  
+      bahkan ketika dunia tidak selalu ramah.
     </p>
 
     <p>
-      Kamu adalah seseorang yang layak dicintai dengan tenang,  
-      dipeluk tanpa ragu,  
-      dan diperjuangkan tanpa alasan.
+      Kamu layak dicintai dengan tenang,  
+      diperjuangkan tanpa ragu,  
+      dan dijaga dengan sepenuh hati.
     </p>
 
     <div class="scroll">scroll lagi ↓</div>
   </section>
 
-  <!-- HALAMAN 3 -->
-  <section id="page3">
+  <!-- PAGE 3 -->
+  <section>
     <p>
-      Aku berdoa semoga setiap langkahmu selalu dijaga Allah,  
-      setiap lelahmu diganti dengan keberkahan,  
-      dan setiap niat baikmu dimudahkan jalannya.
+      Aku berdoa semoga setiap langkahmu dijaga Allah,  
+      setiap lelahmu diganti keberkahan,  
+      dan setiap harapanmu dimudahkan jalannya.
     </p>
 
     <p>
       Semoga di umur 22 ini,  
-      kamu semakin yakin pada dirimu sendiri,  
-      semakin kuat menghadapi dunia,  
-      dan semakin dekat dengan impian-impianmu.
+      kamu semakin yakin pada dirimu,  
+      semakin damai dengan hidupmu,  
+      dan semakin dekat dengan mimpi-mimpimu.
     </p>
 
     <div class="scroll">sedikit lagi ↓</div>
   </section>
 
-  <!-- HALAMAN 4 -->
-  <section id="page4">
+  <!-- PAGE 4 -->
+  <section>
     <p>
       Terima kasih karena sudah hadir dalam hidupku,  
-      karena sudah bertahan,  
-      dan karena memilih berjalan sejauh ini bersamaku.
+      karena sudah memilih bertahan,  
+      dan karena mau berjalan sejauh ini bersamaku.
     </p>
 
     <p>
