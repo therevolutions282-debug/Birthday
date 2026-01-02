@@ -10,8 +10,13 @@
       text-align: center;
       padding: 40px;
     }
-    h1 { color: #d6336c; }
-    p { font-size: 18px; line-height: 1.6; }
+    h1 {
+      color: #d6336c;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
     img {
       width: 250px;
       border-radius: 20px;
@@ -19,14 +24,14 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     button {
-      padding: 12px 22px;
-      border-radius: 14px;
+      padding: 12px 24px;
       border: none;
+      border-radius: 14px;
       background: #d6336c;
       color: white;
       font-size: 16px;
-      margin: 15px 0;
       cursor: pointer;
+      margin: 15px 0;
     }
   </style>
 </head>
@@ -34,7 +39,13 @@
 
   <h1>Selamat Ulang Tahun, Sayang 🤍</h1>
 
-  <img src="foto.jpg" alt="Foto Kita">
+  <!-- TOMBOL MUSIK -->
+  <button onclick="playMusic()">🎶 Putar Lagu</button>
+
+  <!-- FOTO -->
+  <div>
+    <img src="foto.jpg" alt="Foto Kita">
+  </div>
 
   <p>
     Di hari spesial ini, aku cuma mau bilang  
@@ -48,17 +59,8 @@
     dan memudahkan langkah kita menuju hari halal 🤍
   </p>
 
-  <!-- TOMBOL LAGU (ANTI BLOK) -->
-  <button onclick="openSong()">🎶 Putar Lagu Kita</button>
-
   <p><b>— Dari calon pasangan hidupmu 🥰</b></p>
 
-  <script>
-    function openSong() {
-      window.location.href =
-        "https://www.youtube.com/watch?v=0G2xZzZf0nQ";
-    }
-  </script>
-
-</body>
-</html>
+  <!-- MUSIK NO COPYRIGHT (ROMANTIS) -->
+  <audio id="musik" loop>
+    <s
