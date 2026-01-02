@@ -10,13 +10,8 @@
       text-align: center;
       padding: 40px;
     }
-    h1 {
-      color: #d6336c;
-    }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
+    h1 { color: #d6336c; }
+    p { font-size: 18px; line-height: 1.6; }
     img {
       width: 250px;
       border-radius: 20px;
@@ -40,7 +35,7 @@
   <h1>Selamat Ulang Tahun, Sayang 🤍</h1>
 
   <!-- TOMBOL MUSIK -->
-  <button onclick="playMusic()">▶️ Putar Lagu</button>
+  <button onclick="playMusic()">▶️ Putar Lagu Cinta Terakhir</button>
 
   <!-- FOTO -->
   <div>
@@ -61,19 +56,19 @@
 
   <p><b>— Dari calon pasangan hidupmu 🥰</b></p>
 
-  <!-- AUDIO -->
-  <audio id="musik" loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-  </audio>
+  <!-- YOUTUBE (HIDDEN) -->
+  <iframe id="yt"
+    width="0"
+    height="0"
+    allow="autoplay">
+  </iframe>
 
-  <!-- SCRIPT -->
   <script>
     function playMusic() {
-      document.getElementById("musik").play();
+      document.getElementById("yt").src =
+        "https://www.youtube.com/embed/0G2xZzZf0nQ?autoplay=1&loop=1&playlist=0G2xZzZf0nQ";
     }
   </script>
 
 </body>
 </html>
-
-
