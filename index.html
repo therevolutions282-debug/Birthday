@@ -23,19 +23,34 @@
       margin: 20px 0;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
+    button {
+      padding: 10px 22px;
+      border: none;
+      border-radius: 12px;
+      background: #d6336c;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 15px 0;
+    }
   </style>
 </head>
 <body>
 
   <h1>Selamat Ulang Tahun, Sayang 🤍</h1>
 
+  <!-- TOMBOL MUSIK -->
+  <button onclick="playMusic()">▶️ Putar Lagu</button>
+
   <!-- FOTO -->
-  <img src="foto.jpg" alt="Foto Kita">
+  <div>
+    <img src="foto.jpg" alt="Foto Kita">
+  </div>
 
   <p>
     Di hari spesial ini, aku cuma mau bilang  
     terima kasih karena kamu sudah hadir,  
-    bertahan, dan memilihku sebagai pasangan hidupmu 💍
+    bertahan, dan memilihku sebagai pasangan hidupku 💍
   </p>
 
   <p>
@@ -46,12 +61,19 @@
 
   <p><b>— Dari calon pasangan hidupmu 🥰</b></p>
 
-  <!-- LAGU ARI LASSO -->
+  <!-- AUDIO -->
   <audio id="musik" loop>
-  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-</audio>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
 
+  <!-- SCRIPT -->
+  <script>
+    function playMusic() {
+      document.getElementById("musik").play();
+    }
+  </script>
 
 </body>
 </html>
+
 
